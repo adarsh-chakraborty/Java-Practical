@@ -37,7 +37,6 @@ class Main{
     YearMonth yearMonth = YearMonth.of(2021, 11);
     int salesWorthInTheMonth = 0;
 
-     // 1. Highest Selling Product
      for(Sale sale : Sales){
        Sale highestSellingProduct,highestSellingSalesman;
        if(hsProducts.containsKey(sale.product)){
@@ -80,11 +79,6 @@ class Main{
     System.out.println("Highest Selling Product: "+ highestSellingProduct + " with total " + hsProducts.get(highestSellingProduct) + " sales.");
     System.out.println("Highest Selling Salesman: "+ highestSellingSalesman + " with total " + hsSalesman.get(highestSellingSalesman) + " sales.");
     System.out.println("Total Sales in "+ yearMonth.getMonth() + "-" + yearMonth.getYear()  + ": "+ totalSale.get(totalSaleKey) + " (Amount: " + salesWorthInTheMonth+")");
-
-    
-     // 3. Total Sale in the month of November 2021
-
-        
 
   }
 }
