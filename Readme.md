@@ -26,13 +26,13 @@ MCA 1 (2021-22)
 
 #### Practical - 11 ✅
 
-#### Practical - 12 ❌
+#### Practical - 12 ✅
 
-#### Practical - 13
+#### Practical - 13 ✅
 
-#### Practical - 14
+#### Practical - 14 ✅
 
-#### Practical - 15
+#### Practical - 15 👨‍💻
 
 #### Practical - 16
 
@@ -53,3 +53,11 @@ MCA 1 (2021-22)
 #### Practical - 24
 
 #### Practical - 25
+
+---
+
+Run java code with JDBC
+
+```
+javac Driver.java && java -cp "../lib/mysql-connector.jar;" Driver
+```
