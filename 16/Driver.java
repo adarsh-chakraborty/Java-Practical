@@ -1,9 +1,10 @@
 import java.sql.DriverManager;
 import java.sql.Connection;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.Scanner;
 
 class Driver{
   public static void main(String args[]){
@@ -15,17 +16,28 @@ class Driver{
     property.put("password", "superdoge1234");
 
     try{
-    
+
+      Scanner sc = new Scanner(System.in);
       conn = DriverManager.getConnection(url,property);
       System.out.println("Connected to local mysql instance");
 
-      // Create the statement object and sql string.
-      Statement statement = conn.createStatement();
-      String sql = "select * from employees";
+      // Get the user input
+      System.out.println("Find employees based in city:\nEnter City:");
+      String cityQuery = sc.nextLine();
+
+      
+      
+      // Create the PreparedStatement object and pass sql string.
+      String sqlString = "SELECT * FROM employees WHERE city like ?";
+      PreparedStatement statement = conn.prepareStatement(sqlString);
+
+      // Query index (?), value;
+      statement.setString(1, cityQuery);
 
       // Execute the query
-      ResultSet result = statement.executeQuery(sql);
+      ResultSet result = statement.executeQuery();
 
+      System.out.println("Employees living in "+ cityQuery);
       while (result.next()) {
         String id = result.getString("id");
         String name = result.getString("name");
