@@ -61,3 +61,18 @@ Run java code with JDBC
 ```
 javac Driver.java && java -cp "../lib/mysql-connector.jar;" Driver
 ```
+
+---
+
+Create Stored Procedure
+
+```
+DELIMITER //
+
+CREATE PROCEDURE getTotalEmployees(OUT TOTAL_EMPLOYEES INT)
+BEGIN
+	SELECT COUNT(id) INTO TOTAL_EMPLOYEES FROM employees;
+END //
+
+DELIMITER ;
+```
