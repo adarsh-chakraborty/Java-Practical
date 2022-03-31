@@ -8,13 +8,14 @@ import java.nio.charset.Charset;
 class Main {
  public static void main (String args []) throws IOException{
 
-    String[] findAndRemoveCity = {"Mumbai", "Delhi", "Navi Mumbai"};    
+    String[] findAndRemoveCity = {"Mumbai", "Delhi", "Navi Mumbai", "Bangalore", "Ahmedabad"};    
 
     Path filePath = Paths.get("data.txt");
     
      List<String> lines = Files.readAllLines(filePath);
 
         for(String city : findAndRemoveCity){
+           // Check for substring here
           lines.remove(city);
         }
         

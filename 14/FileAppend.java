@@ -73,6 +73,7 @@ class ThreadB extends Thread{
    synchronized (resource) {
 
 
+    // resource list size not required, it will be five always
     for (int i = 0; i< resource.list.size(); i++) {
 
 

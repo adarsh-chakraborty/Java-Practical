@@ -1,0 +1,5 @@
+So it created a file named adarsh.txt
+and anything i write here is being written to the file
+:D
+Hii
+k bye

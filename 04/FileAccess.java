@@ -3,9 +3,6 @@ import java.nio.file.Paths;
 import java.io.*;
 import java.util.Scanner;
 
-
-
-
 class FileRead {
    String fileName;
 
@@ -119,17 +116,15 @@ class FileAccess {
     // Read a portion of file.
     FileRead file = new FileRead("input.txt");
     // Pass line number to read.
-    // file.readLine(0);
-    // file.readUntill(4);
+    file.readUntill(3);
+    file.readLine(4);
 
     // Write to a file at specific position.
     FileWrite file2 = new FileWrite("FileOverwrite.txt");
-    // FileWrite file2_noOverWrite = new FileWrite("FileNoOverWrite.txt");
     
     // Content, LineNumber (Position), Overwrite? (optional)
-    // file2_noOverWrite.writetoFile("This file is going to append everytime.\n", 0);
     file2.writetoFile("Hello, This file was overwritten.", 0, true );
-
+    file2.writetoFile("Hello......", 4);
 
     FileCopy file3 = new FileCopy("input.txt");
     file3.copyTo("output.txt");
