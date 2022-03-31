@@ -1,0 +1,19 @@
+<web-app>
+
+<servlet>
+<servlet-name>getIndexPage</servlet-name>
+<servlet-class>GenerateIndexFile</servlet-class>
+<init-param>
+<param-name>Developer</param-name>
+<param-value>Adarsh Chakraborty</param-value>
+</init-param>
+
+</servlet>
+
+<servlet-mapping>
+<servlet-name>getIndexPage</servlet-name>
+<url-pattern>/</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
