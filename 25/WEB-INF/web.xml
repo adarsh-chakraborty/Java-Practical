@@ -1,0 +1,32 @@
+<web-app>
+
+<servlet>
+    <servlet-name>Index</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+    <init-param>
+        <param-name>developer</param-name>  
+        <param-value>Adarsh Chakraborty</param-value>  
+    </init-param>
+</servlet>
+
+<servlet>
+    <servlet-name>Output</servlet-name>
+    <jsp-file>/output.jsp</jsp-file>
+    <init-param>
+        <param-name>developer</param-name>  
+        <param-value>Adarsh Chakraborty</param-value>  
+    </init-param>
+</servlet>
+
+<servlet-mapping>  
+    <servlet-name>Index</servlet-name>  
+    <url-pattern>/index.jsp</url-pattern>  
+</servlet-mapping> 
+
+<servlet-mapping>  
+    <servlet-name>Output</servlet-name>  
+    <url-pattern>/output.jsp</url-pattern>  
+</servlet-mapping> 
+
+
+</web-app>

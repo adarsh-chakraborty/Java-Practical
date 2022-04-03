@@ -144,14 +144,7 @@ public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletE
           <option value=\"\" disabled selected>Select Table</option>
 """);
           
-        
-    // JDBC
-    
-    
-
     try{
-
-
       String url = "jdbc:mysql://localhost:3306/java_practicals";
       Properties property = new Properties();
       property.put("user", "root");
@@ -160,30 +153,19 @@ public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletE
     
       conn = DriverManager.getConnection(url,property);
 
-      // Create the statement object and sql string.
-      // Statement statement = conn.createStatement();
-      // String sql = "select * from employees";
+  
 
       DatabaseMetaData metaData = conn.getMetaData();
       String[] types = {"TABLE"};
-      // Execute the query
-      // ResultSet result = statement.executeQuery(sql);
+   
       ResultSet tables = metaData.getTables("java_practicals", null, "%", types);
 
-      // while (result.next()) {
-      //   String id = result.getString("id");
-      //   String name = result.getString("name");
-      //   String age = result.getString("age");
-      //   String address = result.getString("city");
-      //   String salary = result.getString("salary");
-      //   pw.println(id+" - " + " Name: "+ name + ", Age: "+age+", address:"+ address+", Salary: "+salary);
-      // }
+      
       while (tables.next()) {
         String tableName = tables.getString("TABLE_NAME");
          pw.println("<option value=\""+tableName+"\">"+tableName+"</option>");
       }
 
-      // Rest of the page generation
       pw.println("""
 </select>
       </div>
@@ -308,7 +290,6 @@ function renderDataTable(tableName, fieldName, tableContent) {
     """);
       
     }catch(Exception e){
-        // pw.println(e.getMess);
      e.printStackTrace();
     }finally{
       
@@ -319,98 +300,4 @@ function renderDataTable(tableName, fieldName, tableContent) {
       }
     }
 
-
-// String name=req.getParameter("name");
-
 }}
-
-
-
-
-
-
-
-
-
-
-/*
-pw.println("""
-<!DOCTYPE html>
-<html lang=\"en\">
-  <head>
-    <meta charset=\"UTF-8\" />
-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
-    <title>DB TABLE</title>
-    <style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4.5rem;
-}
-
-.select_style {
-  overflow: hidden;
-}
-.select_style select {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 120%;
-  background: none;
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-.select_style {
-  background: #fff;
-  overflow: hidden;
-  display: inline-block;
-  color: #525252;
-  font-weight: 300;
-  -webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
-  -moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
-  border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
-  -webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
-  -moz-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
-  box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
-  border: solid 1px #dadada;
-  font-family: 'helvetica neue', arial;
-  position: relative;
-  cursor: pointer;
-  padding: 10px 15px;
-}
-
-.select_style span {
-  position: absolute;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  background: url('http://projects.authenticstyle.co.uk/niceselect/arrow.png')
-    no-repeat;
-  top: 50%;
-  margin-top: -4px;
-}
-</style>
-  </head>
-  <body>
-    <div class=\"container\">
-      <select name=\"cars\" id=\"cars\" class=\"select_style\">
-        <option value=\"volvo\">Volvo</option>
-        <option value=\"saab\">Saab</option>
-        <option value=\"mercedes\">Mercedes</option>
-        <option value=\"audi\">Audi</option>
-      </select>
-    </div>
-  </body>
-</html>
-""");
-*/

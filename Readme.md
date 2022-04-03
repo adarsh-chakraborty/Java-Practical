@@ -32,27 +32,27 @@ MCA 1 (2021-22)
 
 #### Practical - 14 ✅
 
-#### Practical - 15 👨‍💻
+#### Practical - 15 ✅
 
-#### Practical - 16
+#### Practical - 16 ✅
 
-#### Practical - 17
+#### Practical - 17 ✅
 
-#### Practical - 18
+#### Practical - 18 ✅
 
-#### Practical - 19
+#### Practical - 19 ✅
 
-#### Practical - 20
+#### Practical - 20 ✅
 
-#### Practical - 21
+#### Practical - 21 ✅
 
-#### Practical - 22
+#### Practical - 22 ✅
 
-#### Practical - 23
+#### Practical - 23 ✅
 
-#### Practical - 24
+#### Practical - 24 ✅
 
-#### Practical - 25
+#### Practical - 25 ✅
 
 ---
 

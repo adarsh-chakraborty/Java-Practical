@@ -120,12 +120,14 @@ class FileAccess {
     file.readLine(4);
 
     // Write to a file at specific position.
-    FileWrite file2 = new FileWrite("FileOverwrite.txt");
+    FileWrite file1 = new FileWrite("File1.txt");
+    FileWrite file2 = new FileWrite("File2.txt");
     
     // Content, LineNumber (Position), Overwrite? (optional)
+    file1.writetoFile("Adarsh Chakraborty", 4);
     file2.writetoFile("Hello, This file was overwritten.", 0, true );
-    file2.writetoFile("Hello......", 4);
 
+    // Copies input.txt to output.txt
     FileCopy file3 = new FileCopy("input.txt");
     file3.copyTo("output.txt");
     }

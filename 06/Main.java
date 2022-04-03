@@ -8,7 +8,7 @@ import java.nio.charset.Charset;
 class Main {
  public static void main (String args []) throws IOException{
 
-    String[] findAndRemoveCity = {"Mumbai", "Delhi", "Navi Mumbai", "Bangalore", "Ahmedabad"};    
+    String[] findAndRemoveCity = {"Chennai","Kolkata","Surat ","Pune","Jaipur","Kanpur","Nagpur","Indore","Thane","Bhopal","Patna","Vadodara","Ghaziabad","Ludhiana"};    
 
     Path filePath = Paths.get("data.txt");
     
@@ -20,7 +20,5 @@ class Main {
         }
         
     Files.write(filePath, lines, Charset.forName("UTF-8"));
-        
-        
  }
 }

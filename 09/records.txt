@@ -1,4 +1,7 @@
-Adarsh<>Washing Machine<>22000<>2021-01-07
+Adarsh Chakraborty<>Washing Machine<>22000<>2021-01-07
+Adarsh Chakraborty<>Washing Machine<>22000<>2021-01-07
+Adarsh Chakraborty<>Washing Machine<>22000<>2021-01-07
+Adarsh Chakraborty<>Washing Machine<>22000<>2021-01-07
 Santosh<>Refrigerator<>22000<>2021-01-07
 Sunil<>Cooler<>22000<>2021-01-07
 Rajesh<>Water Purifier<>22000<>2021-01-07
@@ -7,7 +10,7 @@ Binod<>Refrigerator<>22000<>2021-01-07
 Pushpa<>Air Conditioner<>22000<>2021-01-07
 Ajay<>Air Conditioner<>22000<>2021-01-07
 Ajay<>Air Conditioner<>22000<>2021-01-07
-Adarsh<>Washing Machine<>22000<>2021-11-07
+Adarsh Chakraborty<>Washing Machine<>22000<>2021-11-07
 Santosh<>Refrigerator<>22000<>2021-01-07
 Sunil<>Cooler<>22000<>2021-01-07
 Rajesh<>Water Purifier<>22000<>2021-01-07
@@ -15,7 +18,7 @@ Abdul<>Washing Machine<>22000<>2021-01-07
 Binod<>Refrigerator<>22000<>2021-01-07
 Pushpa<>Air Conditioner<>22000<>2021-01-07
 Ajay<>Air Conditioner<>22000<>2021-01-07
-Adarsh<>Washing Machine<>22000<>2021-01-07
+Adarsh Chakraborty<>Washing Machine<>22000<>2021-01-07
 Santosh<>Refrigerator<>22000<>2021-01-07
 Sunil<>Cooler<>22000<>2021-01-07
 Rajesh<>Water Purifier<>22000<>2021-01-07

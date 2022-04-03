@@ -28,7 +28,6 @@ public class MergeDemo {
 
     private static void mergeCsvFiles(String idFile, int numFiles) throws IOException {
 
-        // Variables
         ArrayList<File> files = new ArrayList<File>();
         Iterator<File> iterFiles;
         File fileOutput;
@@ -42,7 +41,7 @@ public class MergeDemo {
         // Files: Input
         for (int i = 1; i <= numFiles; i++) {
             csvFile = "./csvfiles/cities" +  "_"  + i  + ".csv";
-            System.out.println(csvFile);
+            System.out.println("Merging "+ csvFile + " into merged.csv");
             files.add(new File(csvFile));
         }
 
@@ -53,10 +52,9 @@ public class MergeDemo {
         }
         try {
             fileOutput.createNewFile();
-            // log
-            // System.out.println("Output: " + fileOutput);
+            
         } catch (IOException e) {
-            // log
+            
         }
 
         iterFiles = files.iterator();
@@ -66,13 +64,8 @@ public class MergeDemo {
         Scanner scanner = new Scanner(files.get(0));
         if (scanner.hasNextLine())
             header = scanner.nextLine();
-        // if (scanner.hasNextLine()) headers = scanner.nextLine().split(";");
+        
         scanner.close();
-
-        /*
-         * System.out.println(header); for(String s: headers){
-         * fileWriter.write(s); System.out.println(s); }
-         */
 
         fileWriter.write(header);
         fileWriter.newLine();

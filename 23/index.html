@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .heading,
+    p {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .container {
+      width: 40%;
+      margin: auto;
+    }
+
+    input[type='text'],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type='submit'] {
+      width: 100%;
+      background-color: #0d47a1;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type='submit']:hover {
+      background-color: #3949ab;
+    }
+
+    div {
+      border-radius: 2px;
+      background-color: #e8eaf6;
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+  </style>
+  <body>
+    <h2 class="heading">Welcome!</h2>
+    <p>Enter all the details and click submit button.</p>
+    <div class="container">
+      <form action="login.jsp" method="post">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstName"
+          placeholder="Your name.."
+        />
+
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastName"
+          placeholder="Your last name.."
+        />
+        <label for="email">E-mail</label>
+
+        <input
+          type="text"
+          id="lname"
+          name="email"
+          placeholder="Your email address.."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="russia">Russia</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
